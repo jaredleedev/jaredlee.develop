@@ -1,4 +1,4 @@
 
-$(document).ready(function() {
-    alert("Hello World!");
-});
+$("#checkItOutButton").click(function() {
+    alert( "Handler for .click() called." );
+  });
