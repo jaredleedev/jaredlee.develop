@@ -17,16 +17,8 @@ var currentDiv = coverDiv;
 
 // Hides cover div and shows Web Design/Programming div.
 checkItOutButton.click(function() {
-    navigateFromCover(webDiv);
+    transitionDiv(webDiv);
 });
-
-// Deletes coverDiv (because it doesn't want to hide) and moves to next div.
-function navigateFromCover(newDiv) {
-    coverDiv.remove();
-    mainBodyDiv.show();
-    newDiv.show();
-    currentDiv = newDiv;
-}
 
 // Transitions from current div to desired div.
 function transitionDiv(newDiv) {
@@ -46,7 +38,10 @@ function updateCurrentDiv(newDiv) {
     }
 }
 
-// Force hide elem (.hide() doesn't work).
-function forceHideElem(elem) {
-    elem.css("display", "none !important");
-}
+// Prevent nav links from acting as a hyperlink.
+$(".nav-link").click(function (e) {
+    e.preventDefault();
+    return false;
+});
+
+
