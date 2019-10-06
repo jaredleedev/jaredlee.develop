@@ -12,13 +12,18 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Internal CSS -->
     <link rel="stylesheet" type="text/css" href="css/cover.css">
+
+    <!-- Internal JS -->
+    <script src="index.js"></script>
   </head>
 
   <body>
     
     <!-- Start Cover -->
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="coverDiv">
         <header class="masthead mb-auto">
             <div class="inner">
                 <h3 class="masthead-brand">Hello!</h3>
@@ -51,7 +56,9 @@
     <!-- End Cover -->
 
     <!-- Start About Me -->
-
+    <div class="container-fluid" style="display: none" id="aboutMeDiv">
+        <h1>About me!</h1>
+    </div>
     <!-- End About Me -->
 
     <!-- Start Web Design/Programming -->
