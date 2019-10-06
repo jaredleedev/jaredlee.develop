@@ -18,8 +18,8 @@ var currentDiv = coverDiv;
 // Hides cover div and shows Web Design/Programming div.
 checkItOutButton.click(function() {
     // Hide cover and show mainBodyDiv and webDiv.
-    mainBodyDiv.hide();
     transitionDiv(webDiv);
+    showElement(mainBodyDiv);
 });
 
 // Transitions from current div to desired div.
