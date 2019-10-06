@@ -31,12 +31,12 @@ function transitionDiv(newDiv) {
 
 // Sets given element display property to none.
 function hideElement(elem) {
-    elem.prop("display", "none");
+    elem.prop("display", "none !important");
 }
 
 // Sets given element display property to visible.
 function showElement(elem) {
-    elem.prop("display", "flex");
+    elem.prop("display", "flex !important");
 }
 
 // Updates currentDiv to given div.
