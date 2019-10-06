@@ -126,3 +126,11 @@ body {
 {
     opacity:0.8 !important;
 }
+
+.mb-auto {
+  margin-bottom: 15% !important;
+}
+
+.my-auto {
+  margin-bottom: 15% !important;
+}

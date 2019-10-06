@@ -18,25 +18,50 @@ var aboutMeLink = $("#aboutMeLink");
 
 // Div currently showing:
 var currentDiv = webDiv;
+var currentNavLink = webLink;
 
 webLink.click(function() {
     transitionDiv(webDiv);
+    currentNavLink.removeClass("active");
+    webLink.addClass("active");
+
+    currentNavLink = webLink;
 });
 
 animationLink.click(function() {
     transitionDiv(animationDiv);
+
+    currentNavLink.removeClass("active");
+    animationLink.addClass("active");
+
+    currentNavLink = animationLink;
 });
 
 resumeLink.click(function() {
     transitionDiv(resumeDiv);
+
+    currentNavLink.removeClass("active");
+    resumeLink.addClass("active");
+
+    currentNavLink = resumeLink;
 });
 
 contactLink.click(function() {
     transitionDiv(contactDiv);
+
+    currentNavLink.removeClass("active");
+    contactLink.addClass("active");
+
+    currentNavLink = contactLink;
 });
 
 aboutMeLink.click(function() {
     transitionDiv(aboutMeDiv);
+
+    currentNavLink.removeClass("active");
+    aboutMeLink.addClass("active");
+
+    currentNavLink = aboutMeLink;
 });
 
 // Transitions from current div to desired div.
