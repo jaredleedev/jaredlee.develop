@@ -20,10 +20,10 @@
 
   <body>
     
-    <!-- Start Main Body -->
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <!-- Start Cover -->
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="coverDiv">
 
-        <!-- Start Header -->
+        <!-- Start Cover Header -->
         <header class="masthead mb-auto">
             <div class="inner">
                 <nav class="nav justify-content-center">
@@ -35,10 +35,10 @@
                 </nav>
             </div>
         </header>
-        <!-- End Header -->
+        <!-- End Cover Header -->
 
-        <!-- Start Cover -->
-        <main role="main" class="inner cover" id="coverDiv">
+        <!-- Start Cover Body -->
+        <main role="main" class="inner cover">
             <h1 class="cover-heading">Welcome to Jared Lee Development!</h1>
             <p class="lead">
                 Here you can find examples of my work in web design/programming, 3D animation, as well as a resume, contact information and a little bit about me.
@@ -47,47 +47,53 @@
                 <button type="button" class="btn btn-lg btn-secondary" id="checkItOutButton">Check it out</button>
             </p>
         </main>
-        <!-- End Cover -->
+        <!-- End Cover Body -->
 
+    </div>
+    <!-- End Cover -->
+
+    <!-- Start Main Body -->
+    <div class="container-fluid" style="display: none" id="mainBodyDiv">
+        
         <!-- Start Web Design/Programming -->
         <div class="container-fluid" style="display: none" id="webDiv">
             <h1>Web Design/Programming!</h1>
         </div>
         <!-- End Web Design/Programming -->
-    
+        
         <!-- Start 3D Animation -->
         <div class="container-fluid" style="display: none" id="animationDiv">
             <h1>3D Animation!</h1>
         </div>
         <!-- End 3D Animation -->
-    
+        
         <!-- Start Resume -->
         <div class="container-fluid" style="display: none" id="resumeDiv">
             <h1>Resume!</h1>
         </div>
         <!-- End Resume -->
-    
+        
         <!-- Start Contact -->
         <div class="container-fluid" style="display: none" id="contactDiv">
             <h1>Contact!</h1>
         </div>
         <!-- End Contact -->
-
+    
         <!-- Start About Me -->
         <div class="container-fluid" style="display: none" id="aboutMeDiv">
             <h1>About me!</h1>
         </div>
         <!-- End About Me -->
-        
-        <!-- Start Footer -->
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                Jared Lee Development, © 2019
-            </div>
-        </footer>
-        <!-- End Footer -->
     </div>
     <!-- End Main Body -->
+
+    <!-- Start Footer -->
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            Jared Lee Development, © 2019
+        </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Leave Jquery and Bootstrap links at bottom of body to make it run faster -->
     <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

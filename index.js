@@ -5,6 +5,7 @@ var checkItOutButton = $("#checkItOutButton");
 
 // Divs:
 var coverDiv = $("#coverDiv");
+var mainBodyDiv = $("#mainBodyDiv");
 var webDiv = $("#webDiv");
 var animationDiv = $("#animationDiv");
 var resumeDiv = $("#resumeDiv");
@@ -16,7 +17,8 @@ var currentDiv = coverDiv;
 
 // Hides cover div and shows Web Design/Programming div.
 checkItOutButton.click(function() {
-    // Hide cover and show webDiv.
+    // Hide cover and show mainBodyDiv and webDiv.
+    showElement(mainBodyDiv);
     transitionDiv(webDiv);
 });
 
