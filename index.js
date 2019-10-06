@@ -19,7 +19,7 @@ var currentDiv = coverDiv;
 checkItOutButton.click(function() {
     // This is a special case where transitionDiv function doesn't work.
     // Must force coverDiv to hide using forceHideElem.
-    coverDiv.parentNode.removeChild(coverDiv);
+    coverDiv.remove();
     mainBodyDiv.show();
     webDiv.show();
     currentDiv = webDiv;
