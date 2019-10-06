@@ -108,3 +108,21 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+.modal-content {
+  background-color: #333333;
+}
+
+.modal-footer {
+  justify-content: center;
+  border-top: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-backdrop
+{
+    opacity:0.8 !important;
+}

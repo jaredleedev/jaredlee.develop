@@ -25,63 +25,62 @@
         
         <!-- Start Header -->
         <header class="masthead mb-auto">
-            <div class="inner">
-                <nav class="nav justify-content-center">
-                    <a class="nav-link" href="#">Web Design/Programming</a>
-                    <a class="nav-link" href="#">3D Animation</a>
-                    <a class="nav-link" href="#">Resume</a>
-                    <a class="nav-link" href="#">Contact</a>
-                    <a class="nav-link" href="#">About Me</a>
+            <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link" href="#" id="webLink active">Web Design/Programming</a>
+                    <a class="nav-link" href="#" id="animationLink">3D Animation</a>
+                    <a class="nav-link" href="#" id="resumeLink">Resume</a>
+                    <a class="nav-link" href="#" id="contactLink">Contact</a>
+                    <a class="nav-link" href="#" id="aboutMeLink">About Me</a>
                 </nav>
-            </div>
         </header>
         <!-- End Header -->
 
-        <!-- Start Cover -->
-        <div id="coverDiv"">
-
-            <!-- Start Cover Body -->
-            <main role="main" class="inner cover">
-                <h1 class="cover-heading">Welcome to Jared Lee Development!</h1>
-                <p class="lead">
-                    Here you can find examples of my work in web design/programming, 3D animation, as well as a resume, contact information and a little bit about me.
-                </p>
-                <p class="lead">
-                    <button type="button" class="btn btn-lg btn-secondary" id="checkItOutButton">Check it out</button>
-                </p>
-            </main>
-            <!-- End Cover Body -->
-    
-        </div>
-        <!-- End Cover -->
+        <!-- Modal -->
+        <div id="coverDiv" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+      
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Welcome to Jared Lee Development!</h4>
+                    </div>
+                        <div class="modal-body">
+                        <p>Here you can find examples of my work in web design/programming, 3D animation, as well as a resume, contact information and a little bit about me.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn-secondary" data-dismiss="modal">Check it out</button>
+                    </div>
+                </div>
+            </div>
+         </div>
 
         <!-- Start Web Design/Programming -->
-        <div class="container" style="display: none" id="webDiv">
-            <h1>Web Design/Programming!</h1>
+        <div class="container" id="webDiv">
+            <h1>Web Design/Programming</h1>
         </div>
         <!-- End Web Design/Programming -->
         
         <!-- Start 3D Animation -->
         <div class="container" style="display: none" id="animationDiv">
-            <h1>3D Animation!</h1>
+            <h1>3D Animation</h1>
         </div>
         <!-- End 3D Animation -->
         
         <!-- Start Resume -->
         <div class="container" style="display: none" id="resumeDiv">
-            <h1>Resume!</h1>
+            <h1>Resume</h1>
         </div>
         <!-- End Resume -->
         
         <!-- Start Contact -->
         <div class="container" style="display: none" id="contactDiv">
-            <h1>Contact!</h1>
+            <h1>Contact</h1>
         </div>
         <!-- End Contact -->
     
         <!-- Start About Me -->
         <div class="container" style="display: none" id="aboutMeDiv">
-            <h1>About me!</h1>
+            <h1>About me</h1>
         </div>
         <!-- End About Me -->
 

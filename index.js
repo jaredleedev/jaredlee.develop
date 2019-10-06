@@ -1,23 +1,42 @@
 // Global References to page elements.
 
-// Buttons:
-var checkItOutButton = $("#checkItOutButton");
 
 // Divs:
-var coverDiv = $("#coverDiv");
 var mainBodyDiv = $("#mainBodyDiv");
 var webDiv = $("#webDiv");
 var animationDiv = $("#animationDiv");
 var resumeDiv = $("#resumeDiv");
-var contactDiv = $("contactDiv");
+var contactDiv = $("#contactDiv");
 var aboutMeDiv = $("#aboutMeDiv");
 
-// Div currently showing:
-var currentDiv = coverDiv;
+// Links:
+var webLink = $("#webLink");
+var animationLink = $("#animationLink");
+var resumeLink = $("#resumeLink");
+var contactLink = $("#contactLink");
+var aboutMeLink = $("#aboutMeLink");
 
-// Hides cover div and shows Web Design/Programming div.
-checkItOutButton.click(function() {
+// Div currently showing:
+var currentDiv = webDiv;
+
+webLink.click(function() {
     transitionDiv(webDiv);
+});
+
+animationLink.click(function() {
+    transitionDiv(animationDiv);
+});
+
+resumeLink.click(function() {
+    transitionDiv(resumeDiv);
+});
+
+contactLink.click(function() {
+    transitionDiv(contactDiv);
+});
+
+aboutMeLink.click(function() {
+    transitionDiv(aboutMeDiv);
 });
 
 // Transitions from current div to desired div.
@@ -42,6 +61,10 @@ function updateCurrentDiv(newDiv) {
 $(".nav-link").click(function (e) {
     e.preventDefault();
     return false;
+});
+
+$(window).on('load',function(){
+    $('#coverDiv').modal('show');
 });
 
 
