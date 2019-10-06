@@ -34,7 +34,7 @@ function hideElement(elem) {
 
 // Sets given element display property to visible.
 function showElement(elem) {
-    elem.prop("display", "visible");
+    elem.prop("display", "flex");
 }
 
 // Updates currentDiv to given div.
