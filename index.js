@@ -17,13 +17,16 @@ var currentDiv = coverDiv;
 
 // Hides cover div and shows Web Design/Programming div.
 checkItOutButton.click(function() {
-    // This is a special case where transitionDiv function doesn't work.
-    // Must force coverDiv to hide using forceHideElem.
+    navigateFromCover(webDiv);
+});
+
+// Deletes coverDiv (because it doesn't want to hide) and moves to next div.
+function navigateFromCover(newDiv) {
     coverDiv.remove();
     mainBodyDiv.show();
-    webDiv.show();
-    currentDiv = webDiv;
-});
+    newDiv.show();
+    currentDiv = newDiv;
+}
 
 // Transitions from current div to desired div.
 function transitionDiv(newDiv) {
